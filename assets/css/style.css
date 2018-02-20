@@ -1,0 +1,17 @@
+body {
+    background-color: transparent;
+    background: url(../assets/images/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.jumbotron {
+    background-color: #E9EFFF;
+    font-family:'Pacifico', cursive;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+div.card{
+    font-family: 'Bellefair', serif; 
+}
