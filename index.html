@@ -12,6 +12,8 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!--Google Font API-->
     <link href="https://fonts.googleapis.com/css?family=Bellefair|Pacifico" rel="stylesheet">
     <!--Stylesheet to override any bootstrap existing styles-->
@@ -34,48 +36,68 @@
             <div class="card">
                 <div class="card-body">
                     Rules:
-                    <hr/>
-                    You will be given a random number at the start of the game. 
+                    <hr/> You will be given a random number at the start of the game.
                     <br />
+                    <br /> There are four crystals below. By clicking on the crystals you will add a specific amount of points
+                    to your total score.
                     <br />
-                    There are four crystals below. By clicking on the crystals you will add a specific amount of points to your total score.
+                    <br /> You will win the game by matching your total score to the random number, you lose the game if your total
+                    score goes above the random number.
                     <br />
+                    <br /> The value of each crystal is hidden from you until you click on it.
                     <br />
-                    You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. 
-                    <br />
-                    <br />
-                    The value of each crystal is hidden from you until you click on it.
-                    <br />
-                    <br />
-                    Each time when the game starts, the game will change the values of each crystal.
+                    <br /> Each time when the game starts, the game will change the values of each crystal.
                 </div>
             </div>
         </div>
         <div class="col-md-5">
             <center>
-            <div class="col-md-6">  
-                <div class="card">
-                    <div class="card-body">
-                        Wins: 0
-                        <br/>
-                        Losses: 0
-                    </div>
-                </div>
-            </div>
-            </center>   
-            <br/>
-            <div class="col-md-12">  
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
                             Wins: 0
-                            <br/>
+                            <br/> 
                             Losses: 0
                         </div>
                     </div>
+                </div>
+            </center>
+            <br/>
+            <div class="col-md-12">
+                <div class="crystals">
+                    <div class="crystal"></div>
+                    <div class="crystal"></div>
+                    <div class="crystal"></div>
+                    <div class="crystal"></div>   
+                </div>
             </div>
-        </div>
-    </div>
-    <br />
+            <br />
+                    <center>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                    <br />
+                    <center>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <br />
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script type="text/javascript" src="./assets/javascript/game.js"></script>
+            
+
 </body>
 
 </html>
