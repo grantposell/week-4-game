@@ -3,8 +3,8 @@ var lost;
 var win;
 
 
-random_result = Math.floor(Math.random() * 60) + 30;//
-$("result").html('Random Result: ' + random_result);
+random_result = Math.floor(Math.random() * 101) + 19;//
+$(".result").html('Target: ' + random_result);
 
 
 for(var i = 0; i < 4; i++){
@@ -20,7 +20,9 @@ for(var i = 0; i < 4; i++){
     $(".crystals").append(crystal);
 }
 
-$(".crystal").on('click', function () {
+$(".crystals").on('click', function () {
+    var num = $(this).attr('data-random');
+    console.log(typeof num);
 });
 //Pseudo Code
 
