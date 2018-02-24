@@ -1,28 +1,29 @@
 var random_result;
 var lost;
 var win;
-
+var num=0;
+var random;
+var crystal;
 
 random_result = Math.floor(Math.random() * 101) + 19;//
 $(".result").html('Target: ' + random_result);
 
 
-for(var i = 0; i < 4; i++){
-    var random= Math.floor(Math.random()* 11) + 1;
+for(var i = 1; i < 5; i++){
+    random= Math.floor(Math.random()* 11) + 1;
     console.log(random);
 
-    var crystal = $("<div>");
-    crystal.attr({
-        "class": 'crystals',
-        "data-random": random
-    });
-
-    $(".crystals").append(crystal);
+     crystal = $("#crys" +i).attr(
+        "data-random", random
+    )[0];
+  
+    // $(".crystals").append(crystal);
 }
 
-$(".crystals").on('click', function () {
-    var num = $(this).attr('data-random');
-    console.log(typeof num);
+$(".items").on('click', function () {
+    console.log($(this));
+     num =  parseInt(   $(this).attr('data-random'));
+    console.log(num);
 });
 //Pseudo Code
 
