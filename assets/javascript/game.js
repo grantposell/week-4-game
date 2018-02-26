@@ -1,3 +1,4 @@
+//Setting the variables
 var random_result;
 var lost;
 var win;
@@ -5,7 +6,9 @@ var num=0;
 var random;
 var crystal;
 
-random_result = Math.floor(Math.random() * 101) + 19;//
+//Generating the random result for the target value
+
+random_result = Math.floor(Math.random() * 102) + 19;//
 $(".result").html('Target: ' + random_result);
 
 
@@ -21,8 +24,8 @@ for(var i = 1; i < 5; i++){
 }
 
 $(".items").on('click', function () {
-    console.log($(this));
-     num =  parseInt(   $(this).attr('data-random'));
+    console.log($(this).children().attr('data-random'));
+     num =  parseInt($(this).children().attr('data-random'));
     console.log(num);
 });
 //Pseudo Code
