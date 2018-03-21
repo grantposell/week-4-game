@@ -2,9 +2,10 @@
 var random_result;
 var lost;
 var win;
-var num=0;
+var num = 0;
 var random;
 var crystal;
+var total = 0;
 
 //Generating the random result for the target value
 
@@ -27,7 +28,11 @@ $(".items").on('click', function () {
     console.log($(this).children().attr('data-random'));
      num =  parseInt($(this).children().attr('data-random'));
     console.log(num);
+    total += num;
+    console.log (total);
+    $("#current-value").html(total);
 });
+
 //Pseudo Code
 
 //A game with 4 crystals and random result.
