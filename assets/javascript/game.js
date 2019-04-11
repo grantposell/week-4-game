@@ -1,7 +1,7 @@
 //Setting the variables
 var random_result;
-var lost;
-var win;
+var lossCounter= 0;
+var winCounter = 0;
 var num = 0;
 var random;
 var crystal;
@@ -31,7 +31,19 @@ $(".items").on('click', function () {
     total += num;
     console.log (total);
     $("#current-value").html(total);
+    if(total == random_result){
+        alert('You won!')
+        winCounter++;
+        document.getElementById("winCounter").innerHTML = winCounter;
+    }else if (total > random_result){
+        alert('You lost')
+        lossCounter++;
+        document.getElementById("lossCounter").innerHTML = lossCounter;
+        
+        
+    }
 });
+
 
 //Pseudo Code
 
